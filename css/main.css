@@ -3597,6 +3597,71 @@ form textarea.margin-l {
   opacity: 1;
 }
 
+
+
+.accordian {
+  max-width: 650px;
+  padding: 0.6rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.accordian {
+  background: #323232;
+  border-left: 5px solid #dbdbdb;
+}
+
+.accordian_head {
+  background-color: transparent;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.accordian_toggler {
+  color: #dbdbdb;
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 1.8rem;
+  transition: all 0.5s ease;
+}
+
+.accordian_toggler.active {
+  rotate: 133deg;
+}
+
+.accordian_title {
+  color: #dbdbdb;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.accordian_body {
+  background: transparent;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease;
+}
+
+.active_body {
+  grid-template-rows: 1fr;
+}
+
+.accordian_description {
+  background-color: transparent;
+  margin-top: 0.7rem;
+  padding-left: 2.3rem;
+  font-size: 0.9rem;
+  overflow: hidden;
+  line-height: 1.2rem;
+}
+
 /* ------------------------------------------------*/
 /* Gallery End */
 /* ------------------------------------------------*/
